@@ -1,0 +1,38 @@
+1.The larger number it has, the slower the output comes out. When N is around 60 it just gets into an infinite loop, I assume it cause
+s overflow and got stuck.
+Output for PAD 0~9:
+1
+1
+1
+2
+2
+3
+4
+5
+7
+9
+12
+
+2. The value of SUMS(N) is always one less than PAD(N). I think the reson behind this is this Padoan sequence strats with 1. Since both of my PAD and SUMS are coded recursively, they behave in a similar way. In PAD, we just add the value of (N-1)th term and (N-2)th term, but we know that all the previous numbers are all added up in the same way from the first 3 terms, which are 1's. In other words, it adds 1 whenever the addition happens recursively, but start with 1. On the other hand, SUMS add 1 whenever the addition happens recursively, but start from 0, since there is no adding for the first 3 elements. 
+Output for SUMS 0~9:
+0
+0
+0
+1
+1
+2
+3
+4
+6
+8
+11
+
+3.
+Output for ANON:
+?
+?
+(((? ?) ?) ?)
+(? ? ? ?)
+(? (? ?) ?)
+(((? ?) (? ?)) (? ?))
+(? (? (? (? ?))))

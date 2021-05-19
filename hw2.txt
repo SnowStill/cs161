@@ -1,0 +1,25 @@
+problem1
+(print (BFS '(ROOT)))
+(print (BFS '((((L E) F) T))))
+(print (BFS '((R (I (G (H T)))))))
+(print (BFS '(((A (B)) C (D)))))
+(print (BFS '((T (H R E) E))))
+(print (BFS '((A ((C ((E) D)) B)))))
+
+(ROOT)
+(T F L E)
+(R I G H T)
+(C A D B)
+(T E H R E)
+(A B C D E)
+
+problem2
+(print (DFS '(nil nil nil nil) nil))
+(print (DFS '(T T T nil) nil))
+(print (DFS '(T T nil nil) nil))
+(print (DFS '(nil nil T nil) nil))
+
+((NIL NIL NIL NIL) (T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+((T T T NIL) (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+((T T NIL NIL) (NIL T NIL NIL) (T T T NIL) (NIL NIL T NIL) (T NIL T T) (NIL NIL T T) (T T T T))
+((NIL NIL T NIL) (T T T NIL) (NIL T NIL NIL) (T T NIL T) (NIL NIL NIL T) (T NIL T T) (NIL NIL T T) (T T T T))
